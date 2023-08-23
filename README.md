@@ -1,1 +1,1 @@
-# Covid-Database-Project-3
+# Covid-Dashboard-Project-3
