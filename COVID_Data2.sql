@@ -16,7 +16,10 @@ CREATE TABLE Cases (
     Cases_Cumulative_Total BIGINT   NOT NULL,
     New_Cases_Last_7_Days INT   NOT NULL,
     Deaths_Cumulative_Total BIGINT   NOT NULL,
-    New_Deaths_Last_7_Days INT   NOT NULL
+    New_Deaths_Last_7_Days INT NOT NULL,
+	Latitude BIGINT NOT NULL,
+	Longitude BIGINT NOT NULL,
+	CASE_ID SERIAL PRIMARY KEY
 );
 
 CREATE TABLE Vaccinations (
@@ -26,7 +29,8 @@ CREATE TABLE Vaccinations (
     Total_Vaccinations BIGINT   NOT NULL,
     Persons_Vaccinated_Plus1_Dose INT   NOT NULL,
     First_Vaccine_Date DATE,
-    Persons_Booster_Add_Dose INT  
+    Persons_Booster_Add_Dose INT,
+	VAX_ID SERIAL PRIMARY KEY
 );
 
 ALTER TABLE Cases ADD CONSTRAINT fk_Cases_Country FOREIGN KEY(Country)
@@ -42,7 +46,4 @@ SELECT * FROM Cases;
 SELECT * FROM Vaccinations;
 
 
--- DROP TABLES -- 
-DROP TABLE Vaccinations;
-DROP TABLE Cases;
-DROP TABLE Countries;
+

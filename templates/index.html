@@ -5,51 +5,235 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Covid-19 Data</title>
+  <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-  <!-- D3 -->
-  <script src="https://d3js.org/d3.v7.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""/>
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-  <!-- Leaflet JavaScript code -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+   <!-- D3 -->
+   <script src="https://d3js.org/d3.v7.min.js"></script>
 
-  <!-- The div that holds our map -->
-  <div id="map"></div>
-
-  <!-- Our JavaScript file -->
-  <script type="text/javascript" src="../static/logic.js"></script>
+   <!-- Leaflet CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
  
-    <!-- Plotly -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   <!-- Custom CSS --> 
+   <link rel="stylesheet" href="../static/style.css">
+ 
+   <!-- Leaflet JavaScript code -->
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+  
+     <!-- Plotly -->
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-  <!-- flask code to link to your styles.css file. Feel free to update to match your css file-->
-  <!--<link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}"-->
 </head>
 
 <body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">Covid-19 Data</span>
+        </a>
 
-    <!-- A drop down list to select what period you want to use -->
-    <select id="Period">
-        <option value="1">Period 1</option>
-        <option value="2">Period 2</option>
-        <option value="3">Period 3</option>
-    </select>
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
 
-    <!-- An Area for your plot-->
-    <div id="Plot"></div>
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
+        </div>
+        </nav>
+        <div class="main">
+          <nav class="navbar navbar-expand navbar-light navbar-bg">
+            <a class="sidebar-toggle js-sidebar-toggle">
+              <i class="hamburger align-self-center"></i>
+            </a>
+     
+                      <a href="#" class="list-group-item">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-2">
+                      
+                    <i class="align-middle" data-feather="settings"></i>
+                  </a>
+    
+            
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-    <!-- flask code to link to your index.js file. Feel free to copy / paste or adjust to your file names-->
-    <!--<script src="{{ url_for('static', filename='../static/logic.js') }}"></script-->
 
-</body>
+        
+        <main class="content">
+          <div class="container-fluid p-0">
+  
+            <h1 class="h3 mb-3"><strong>Covid-19 Global Analysis Dashboard</strong></h1>
+            <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+                <div class="card flex-fill w-100">
+                  <div class="card-header">
 
+  
+                    <h5 class="card-title mb-0">Top 20 Countries with Highest Covid-19 Deaths</h5>
+                  </div>
+                  <div class="card-body px-2">
+                    <div class="embed-responsive embed-responsive-16by9"></div>
+                    <div id="map" style="height:350px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+                <div class="card flex-fill w-100">
+                  <div class="card-header">
+  
+                    <h5 class="card-title mb-0">Vaccinations and Total Deaths - Top 20 Countries</h5>
+                  </div>
+                  <div class="card-body px-2">
+                    <div class="embed-responsive embed-responsive-16by9"></div>
+                    <div id="Plot" style="height:450px;"></div>
+                  </div>
+                </div>
+              </div>
+
+            <select id="selDataset"></select>
+            <div class="row">
+              <div class="col-xl-6 col-xxl-5 d-flex">
+                <div class="w-100">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col mt-0">
+                              <h5 class="card-title">New Cases - Last 7 Days</h5>
+                            </div>
+  
+                            <div class="col-auto">
+                              <div class="stat text-primary">
+                                <i class="align-middle" data-feather="truck"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div>New Cases: <span id="New_Cases_Last_7_Days"></span></div>
+                          <div class="mb-0">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col mt-0">
+                              <h5 class="card-title">New Deaths - Last 7 Days</h5>
+                            </div>
+  
+                            <div class="col-auto">
+                              <div class="stat text-primary">
+                                <i class="align-middle" data-feather="users"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div>New Deaths: <span id="New_Deaths_Last_7_Days"></span></div>
+                          <div class="mb-0">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col mt-0">
+                              <h5 class="card-title">Total Cases</h5>
+                            </div>
+  
+                            <div class="col-auto">
+                              <div class="stat text-primary">
+                                <i class="align-middle" data-feather="dollar-sign"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div>Total Cases: <span id="Cases_Cumulative_Total"></span></div>
+                          <div class="mb-0">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col mt-0">
+                              <h5 class="card-title">Total Deaths</h5>
+                            </div>
+  
+                            <div class="col-auto">
+                              <div class="stat text-primary">
+                                <i class="align-middle" data-feather="shopping-cart"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div>Total Deaths: <span id="Deaths_Cumulative_Total"></span></div>
+                          <div class="mb-0">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+                <div class="card flex-fill w-100">
+                  <div class="card-header">
+  
+                    <h5 class="card-title mb-0">Vaccinations and Total Deaths - Top 20 Countries</h5>
+                  </div>
+                  <div class="card-body px-2">
+                    <div class="embed-responsive embed-responsive-16by9"></div>
+                    <div id="pieChart"></div>
+                  </div>
+                </div>
+              </div>
+            </select>
+        </main>
+  
+
+    <!-- Our JavaScript files -->
+   <script type="text/javascript" src="../static/logic.js"></script>
+   <script type="text/javascript" src="../static/data.js"></script>
+
+  <!-- flask code to link to your styles.css file. Feel free to update to match your css file-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}">
+
+   <!-- flask code to link to your logic.js file. Feel free to copy / paste or adjust to your file names-->
+   <script src="{{ url_for('static', filename='../static/logic.js') }}"></script>
+
+   
+
+</head>
+
+
+ 
 </html>
 

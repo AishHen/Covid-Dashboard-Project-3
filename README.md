@@ -1,1 +1,2 @@
-# Covid-Dashboard-Project-3
+# Covid-Analysis-Project-3
+Visualizations using JavaScript libraries
