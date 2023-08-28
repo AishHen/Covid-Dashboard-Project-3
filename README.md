@@ -80,3 +80,33 @@ https://covid19.who.int/who-data/vaccination-data.csv
 
 
 
+### Dashboard Components - Screenshots 
+
+**Country Selector Dropdown**
+<img width="608" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/43614632-8dc2-4456-a35c-51683c81e999">
+
+**World Map  - Top 20 Countries with Highest Covid Deaths**
+Includes hover tooltip with country and number of deaths 
+<img width="953" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/d5cc5f9b-1dce-4bd8-a5fb-e445503333ce">
+
+
+**Bar Chart of Vaccinations and Total Deaths - Top 20 Countries**
+<img width="953" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/7234251e-a89f-4a8a-93a1-edd8ca149a25">
+
+**Pie Chart of Top 10 Highest Countries - New Cases Last 7 Days**
+<img width="802" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/0243a18c-0110-4683-a895-444cc713b648">
+
+
+### Conclusion
+The COVID-19 pandemic has significantly impacted the world, leading to widespread illness, loss of life, and disruptions across various aspects of society
+
+Visualization of relevant data serves as a benefit to those on the front-lines and behind the scenes by providing the most up-to-date information 
+
+While we assessed specific items for each country, there are still many layers that could be added to visualize and uncover trends throughout the pandemic.
+
+As the pandemic is still very much ongoing, looking at the data, particularly vaccine data and new cases for each country can help in forecasting and mitigating additional variants or spread of this virus.
+<img width="2854" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/f679cfdf-67dc-44fa-a178-b833dd59fc81">
+
+
+
+
