@@ -17,8 +17,8 @@ CREATE TABLE Cases (
     New_Cases_Last_7_Days INT   NOT NULL,
     Deaths_Cumulative_Total BIGINT   NOT NULL,
     New_Deaths_Last_7_Days INT NOT NULL,
-	Latitude BIGINT NOT NULL,
-	Longitude BIGINT NOT NULL,
+	Latitude DOUBLE PRECISION NOT NULL,
+	Longitude DOUBLE PRECISION NOT NULL,
 	CASE_ID SERIAL PRIMARY KEY
 );
 
@@ -44,6 +44,8 @@ REFERENCES Countries (Country);
 SELECT * FROM Countries;
 SELECT * FROM Cases;
 SELECT * FROM Vaccinations;
+
+
 
 
 

@@ -4,6 +4,8 @@ from sqlalchemy import create_engine, text, Column, Integer, String, Date
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session
 from datetime import date
+from pathlib import Path
+import json
 
 import os
 import pandas as pd
@@ -182,8 +184,5 @@ def new_cases_last_7_days():
     return new_cases_last_7_days_df
 
 def country_info():
-    country_info_df = LoadCaseData()
-    country_info_df.head().to_dict("records")
-    return country_info_df
-
-    
+    world_file = open('data/WHO-Data.json', 'r') 
+    return world_file.read()

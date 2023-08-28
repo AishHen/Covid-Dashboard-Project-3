@@ -1,13 +1,13 @@
 from flask import Flask, render_template, jsonify
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine,func
+import json
 
 #Load From the Database file that I created. It is in this same directory
 import pandas as pd
 from Database import deaths_vs_vaccination
 from Database import new_cases_last_7_days
 from Database import country_info
-
 
 app = Flask(__name__)
 
@@ -42,7 +42,8 @@ def sample2():
 
 @app.route("/sample3")
 def sample3():
-    return jsonify(country_info().to_dict(orient="records"))
+    return country_info()
+
 
 if __name__ == "__main__":
     app.run(debug=True)
