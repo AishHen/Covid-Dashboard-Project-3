@@ -105,7 +105,7 @@ Visualization of relevant data serves as a benefit to those on the front-lines a
 While we assessed specific items for each country, there are still many layers that could be added to visualize and uncover trends throughout the pandemic.
 
 As the pandemic is still very much ongoing, looking at the data, particularly vaccine data and new cases for each country can help in forecasting and mitigating additional variants or spread of this virus.
-<img width="2854" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/f679cfdf-67dc-44fa-a178-b833dd59fc81">
+
 
 
 
