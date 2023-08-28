@@ -39,12 +39,14 @@ https://covid19.who.int/who-data/vaccination-data.csv
 1. Python AttributeError: type object “datetime.datetime” no attribute “datetime.” (n.d.). Statistics Globe. Retrieved August 28, 2023, from https://statisticsglobe.com/type-object-datetime-has-no-attribute-python
 
 
-2. Class Repository:
+2. Class Repository and TA Assistance:
 
     https://git.bootcampcontent.com/University-of-Texas-at-Austin/UTA-VIRT-DATA-PT-04-2023-U-LOLC/-/tree/main/01-Lesson-Plans
+    TA's - Nathan Darter; Trisha Mallya
+    Initial Template and file structure (courtesy of Nathan Darter) -- https://github.com/nedarter/SimpleFlaskApp/tree/main
+    
 
-
-3. Dropdown and Event Listener Syntax Resources:
+4. Dropdown and Event Listener Syntax Resources:
 
       JavaScript DOM EventListener. (n.d.). Www.w3schools.com. https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
@@ -54,7 +56,7 @@ https://covid19.who.int/who-data/vaccination-data.csv
 
       Fill dropdown list with json. (n.d.). Stack Overflow. Retrieved August 28, 2023, from https://stackoverflow.com/questions/6532791/fill-dropdown-list-with-json
 
-4. Reading in a JSON file to Python Syntax Resource:
+5. Reading in a JSON file to Python Syntax Resource:
 
       Read JSON file using Python. (2019, December 17). GeeksforGeeks. https://www.geeksforgeeks.org/read-json-file-using-python/
 
@@ -65,7 +67,7 @@ https://covid19.who.int/who-data/vaccination-data.csv
     30+ Open-Source and Free Dashboard Templates. (2020, March 25). Creative Tim’s Blog - Fully Coded Design Resources for Web Developers. https://www.creative-tim.com/blog/web-design/free-dashboard-templates/
 
 
-**DATASET AND INFORMATION RESOURCES**
+**DATASET AND INFORMATIONAL RESOURCES**
 1.  World Health Organization. (2021). WHO Coronavirus (COVID-19) Dashboard. Who.int. https://covid19.who.int/data
 
 2. CDC. (2020, March 28). COVID Data Tracker. Centers for Disease Control and Prevention. https://covid.cdc.gov/covid-data-tracker/#nationwide-blood-donor-seroprevalence-2022
