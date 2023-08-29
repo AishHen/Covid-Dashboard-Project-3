@@ -4,7 +4,11 @@ Visualizations using JavaScript libraries
 **Project Contributors:**
 Aisha Henderson, Rajeshwari Radhakrishna and Kelly Blake
 
-The goal of this project was to create an interactive dashboard that allows end-users to view and explore COVID-19 data by country. We utilized the below-referenced datasets to understand the differences and global impact of COVID-19 over time, looking at areas such as total cases, total deaths, total vaccinations and new/active cases.
+
+**Project Description**
+The goal of this project was to create an interactive dashboard that allows end-users to view and explore COVID-19 data by country. We utilized the below-referenced datasets to understand the differences and global impact of COVID-19 over time.
+
+For the purpose of our research, we will be looking at areas such as total cases, total deaths, total vaccinations and new/active cases to compare and contrast this data between each country.
 
 **Datasets Utilized:**
 Daily Cases and Deaths by Date (1) // Vaccination Data (2)
@@ -29,8 +33,17 @@ https://covid19.who.int/who-data/vaccination-data.csv
 
 5.  The views in the dashboard include:
       - A map of the Top Twenty Countries with Highest Deaths resulting from COVID-19
+
+            **Key Findings:** While it was known to us that the U.S. had the highest total deaths, we were surprised to see some of the other countries that deaths close to 1 million. At the same time, it was also interesting to note that based on this data, the U.S. was the only country with over 1 million total deaths.
+
       - A bar chart of the Top Twenty Countries with the Highest Deaths vs. The Total Vaccinations for those countries
+
+            **Key Findings:** This chart adds a layer of vaccination information to the countries with the highest total deaths. Some of the countries with the highest total vaccinations (initial dose) include China, India, the U.S. and Brazil.
+
       - A pie chart showing the Top Ten Countries with the Highest Rate of New Cases in the Last 7 Days
+
+            **Key Findings:** This chart was most surprising, due to how the data is spread out. The Republic of Korea has the most new cases within the last 7 days, with 62.3%, compared to the other 9 Countries analyzed. One thing we noticed upon reviewing the dataset is that this information may be skewed due to under-reported new cases. Several countries in the WHO dataset did not have reported new cases, even though we know this is not the case. 
+            
       - Additionally, there is a summary view that includes a dropdown of all countries. Upon selecting a country, data for each populates to show Total Cases, Total Deaths, New Cases, and New Deaths 
 
 ### REFERENCES
@@ -85,7 +98,7 @@ https://covid19.who.int/who-data/vaccination-data.csv
 ### Dashboard Components - Screenshots 
 
 **Country Selector Dropdown**
-<img width="608" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/43614632-8dc2-4456-a35c-51683c81e999">
+![Alt text](image.png)
 
 **World Map  - Top 20 Countries with Highest Covid Deaths**
 Includes hover tooltip with country and number of deaths 
