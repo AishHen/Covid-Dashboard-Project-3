@@ -102,14 +102,14 @@ https://covid19.who.int/who-data/vaccination-data.csv
 
 **World Map  - Top 20 Countries with Highest Covid Deaths**
 Includes hover tooltip with country and number of deaths 
-<img width="953" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/d5cc5f9b-1dce-4bd8-a5fb-e445503333ce">
+![Alt text](image-1.png)
 
 
 **Bar Chart of Vaccinations and Total Deaths - Top 20 Countries**
-<img width="953" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/7234251e-a89f-4a8a-93a1-edd8ca149a25">
+![Alt text](image-2.png)
 
 **Pie Chart of Top 10 Highest Countries - New Cases Last 7 Days**
-<img width="802" alt="image" src="https://github.com/AishHen/Covid-Dashboard-Project-3/assets/131278014/0243a18c-0110-4683-a895-444cc713b648">
+![Alt text](image-3.png)
 
 
 ### Conclusion
